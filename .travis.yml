@@ -3,4 +3,6 @@ script:
   - which pip
   - pip --version
   - which pip3
+  - pyenv versions
+  - pyenv --global 2.7 3.7
   - pip3 --version
