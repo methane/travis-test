@@ -4,6 +4,7 @@ script:
   - pip --version
   - python -VV
   - python3 -VV
+  - python3 -m pip -V
   - which pip3
   - pyenv versions
   - pyenv global
