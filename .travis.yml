@@ -2,6 +2,8 @@ dist: xenial
 script:
   - which pip
   - pip --version
+  - python -VV
+  - python3 -VV
   - which pip3
   - pyenv versions
   - pyenv global
