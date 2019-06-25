@@ -1,16 +1,11 @@
 dist: xenial
+env:
+  global:
+    - PATH=/opt/python/3.7.1/bin:$PATH
 script:
-  - pyenv global 3.7.1 system
-  - which pip
-  - pip --version
-  - which python3
+  - python -VV
   - python3 -VV
-  - which pip3
-  - pyenv which pip3
-  - pyenv which python3
-  - pyenv which aws || true
-  - pip3 --version
-  - pip3 install awscli
-  - pyenv which aws
-  - which aws
-  - aws version
+  - pip -V
+  - pip3 -V
+  - python3 -m pip install awscli
+  - aws help
