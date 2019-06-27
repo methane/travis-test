@@ -5,6 +5,7 @@ dist: bionic
 script:
   - ls /usr/bin/py*
   - ls /usr/local/bin/py*
+  - ls /usr/bin/pip*
   - which python
   - which pyenv
   - pyenv versions
