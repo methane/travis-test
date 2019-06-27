@@ -11,3 +11,4 @@ script:
   - python -VV
   - pip -V
   - pip install --user awscli
+  - aws help
