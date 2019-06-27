@@ -1,11 +1,13 @@
 dist: bionic
-#env:
-#  global:
-#    - PATH=/opt/python/3.7.1/bin:$PATH
+env:
+  global:
+    - PATH=$HOME/.local/bin:$PATH
+    #- PATH=/opt/python/3.7.1/bin:$PATH
 script:
-  - ls /usr/bin/py*
-  - ls /usr/local/bin/py*
-  - ls /usr/bin/pip*
   - which python
   - which pyenv
   - pyenv versions
+  - pyenv global 3.7.1
+  - python -VV
+  - pip -V
+  - pip install --user awscli
