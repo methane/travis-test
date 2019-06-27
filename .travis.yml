@@ -1,4 +1,4 @@
-dist: bionic
+#dist: bionic
 env:
   global:
     - PATH=$HOME/.local/bin:$PATH
